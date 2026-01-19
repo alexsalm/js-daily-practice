@@ -1,5 +1,7 @@
 const heading = document.querySelector("h1");
 const button = document.querySelector("button");
+const score = document.querySelector("div");
+const span = document.createElement("span");
 
 let humanScore = 0;
 let computerScore = 0;
@@ -10,6 +12,7 @@ function addToScore(a, b) {
     } else if (a < b) {
         computerScore++;
     }
+
     console.log(`Human score: ${humanScore}`);
     console.log(`Computer score: ${computerScore}`);
 
@@ -24,7 +27,9 @@ function addToScore(a, b) {
 
 button.addEventListener('click', function(event) {
     event.preventDefault();
-    let score = addToScore(3, 1);
+    let currentScore = addToScore(3, 1);
+    span.textContent = currentScore;
+    score.appendChild(span);
 })
 
 // addToScore(5, 1);
