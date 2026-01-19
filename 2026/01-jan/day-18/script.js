@@ -1,4 +1,5 @@
 const heading = document.querySelector("h1");
+const button = document.querySelector("button");
 
 let humanScore = 0;
 let computerScore = 0;
@@ -21,12 +22,17 @@ function addToScore(a, b) {
     }
 }
 
-addToScore(5, 1);
-addToScore(1, 1);
-addToScore(0, 4);
-addToScore(1, 2);
-addToScore(7, 6);
-addToScore(4, 4);
-addToScore(9, 3);
-addToScore(3, 1);
-addToScore(5, 2);
+button.addEventListener('click', function(event) {
+    event.preventDefault();
+    let score = addToScore(3, 1);
+})
+
+// addToScore(5, 1);
+// addToScore(1, 1);
+// addToScore(0, 4);
+// addToScore(1, 2);
+// addToScore(7, 6);
+// addToScore(4, 4);
+// addToScore(9, 3);
+// addToScore(3, 1);
+// addToScore(5, 2);
