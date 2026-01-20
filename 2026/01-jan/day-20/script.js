@@ -7,6 +7,18 @@ let humanScore = 0;
 let computerScore = 0;
 
 function addToScore(a, b) {
+    const runningScore = function(humanScore, computerScore) {
+        if (humanScore > computerScore) {
+            heading.textContent = "The winner is human!";
+        }
+        else if (humanScore < computerScore) {
+            heading.textContent = "The winner is computer";
+        } 
+        else {
+            heading.textContent = "It's a tie!";
+        }
+    };
+    
     if (a > b) {
         humanScore++;
     } else if (a < b) {
@@ -17,10 +29,10 @@ function addToScore(a, b) {
     console.log(`Computer score: ${computerScore}`);
 
     if (humanScore == 5) {
-        heading.textContent = "The winner is human!";
+        runningScore(humanScore, computerScore);
         return;
     } else if (computerScore == 5) {
-        heading.textContent = "The winner is computer!";
+        runningScore(humanScore, computerScore);
         return;
     }
 }
