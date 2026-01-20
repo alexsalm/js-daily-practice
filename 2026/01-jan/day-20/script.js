@@ -1,13 +1,21 @@
 const heading = document.querySelector("h1");
 const button = document.querySelector("button");
 const score = document.querySelector("div");
-const span = document.createElement("span");
+const span1 = document.createElement("span");
+const span2 = document.createElement("span");
+
 
 let humanScore = 0;
 let computerScore = 0;
 
 function addToScore(a, b) {
-    const runningScore = function(humanScore, computerScore) {
+    const runningScore = function(currentHumanScore, currentComputerScore) {
+        span1.textContent = (`Human score: ${currentHumanScore}`);
+        span2.textContent = (`Computer score: ${currentComputerScore}`);
+        score.appendChild(span1, span2);
+    };
+    
+    const displayWinner = function(humanScore, computerScore) {
         if (humanScore > computerScore) {
             heading.textContent = "The winner is human!";
         }
@@ -25,21 +33,18 @@ function addToScore(a, b) {
         computerScore++;
     }
 
-    console.log(`Human score: ${humanScore}`);
-    console.log(`Computer score: ${computerScore}`);
-
+    runningScore(humanScore, computerScore);
+    
     if (humanScore == 5) {
-        runningScore(humanScore, computerScore);
+        displayWinner(humanScore, computerScore);
         return;
     } else if (computerScore == 5) {
-        runningScore(humanScore, computerScore);
+        displayWinner(humanScore, computerScore);
         return;
     }
 }
 
 button.addEventListener('click', function(event) {
     event.preventDefault();
-    let currentScore = addToScore(3, 1);
-    span.textContent = currentScore;
-    score.appendChild(span);
+    addToScore(3, 1);
 })
