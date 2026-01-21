@@ -2,17 +2,14 @@ const heading = document.querySelector("h1");
 const button = document.querySelector("button");
 const score = document.querySelector("div");
 const span1 = document.createElement("span");
-const span2 = document.createElement("span");
-
 
 let humanScore = 0;
 let computerScore = 0;
 
 function addToScore(a, b) {
     const runningScore = function(currentHumanScore, currentComputerScore) {
-        span1.textContent = (`Human score: ${currentHumanScore}`);
-        span2.textContent = (`Computer score: ${currentComputerScore}`);
-        score.appendChild(span1, span2);
+        span1.textContent = (`Human score: ${currentHumanScore} Computer score: ${currentComputerScore}`);
+        score.appendChild(span1);
     };
     
     const displayWinner = function(humanScore, computerScore) {
