@@ -1,5 +1,5 @@
 const heading = document.querySelector("h1");
-const button = document.querySelector("button");
+const buttons = document.querySelectorAll("button");
 const score = document.querySelector("div");
 const span1 = document.createElement("span");
 
@@ -41,7 +41,9 @@ function addToScore(a, b) {
     }
 }
 
-button.addEventListener('click', function(event) {
-    event.preventDefault();
-    addToScore(3, 1);
-})
+buttons.forEach((button) => {
+    button.addEventListener("click", function(event) {
+        event.preventDefault();
+        addToScore(3, 1);
+    });
+});
