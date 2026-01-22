@@ -3,6 +3,29 @@ const buttons = document.querySelectorAll("button");
 const score = document.querySelector("div");
 const span1 = document.createElement("span");
 
+const humanChoice = function() {
+    let humanInput = prompt("Enter your shape: ");
+    if (humanInput.toLowerCase() === "rock") {
+        return "rock";
+    } else if (humanInput.toLowerCase() === "paper") {
+        return "paper";
+    } else if (humanInput.toLowerCase() === "scissors") {
+        return "scissors";
+    }
+};
+
+const computerChoice = function() {
+    let choice = (Math.floor((Math.random() * 3)));
+
+    if (choice == 0) {
+        return "rock";
+    } else if (choice == 1) {
+        return "paper";
+    } else {
+        return "scissors";
+    }
+};
+
 let humanScore = 0;
 let computerScore = 0;
 
