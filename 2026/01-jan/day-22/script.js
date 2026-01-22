@@ -67,6 +67,6 @@ function addToScore(a, b) {
 buttons.forEach((button) => {
     button.addEventListener("click", function(event) {
         event.preventDefault();
-        addToScore(3, 1);
+        addToScore(humanChoice, computerChoice);
     });
 });
