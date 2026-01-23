@@ -29,7 +29,7 @@ const computerChoice = function() {
 let humanScore = 0;
 let computerScore = 0;
 
-function addToScore(a, b) {
+function addToScore(humanAnswer, computerAnswer) {
     const runningScore = function(currentHumanScore, currentComputerScore) {
         span1.textContent = (`Human score: ${currentHumanScore} Computer score: ${currentComputerScore}`);
         score.appendChild(span1);
@@ -47,10 +47,24 @@ function addToScore(a, b) {
         }
     };
     
-    if (a > b) {
-        humanScore++;
-    } else if (a < b) {
+    if (humanAnswer == "rock" && computerAnswer == "rock") {
+        // It's a tie
+    } else if (humanAnswer == "rock" && computerAnswer == "paper") {
         computerScore++;
+    } else if (humanAnswer == "rock" && computerAnswer == "scissors") {
+        humanScore++;
+    } else if (humanAnswer == "paper" && computerAnswer == "rock") {
+        humanScore++;
+    } else if (humanAnswer == "paper" && computerAnswer == "paper") {
+        // It's a tie
+    } else if (humanAnswer == "paper" && computerAnswer == "scissors") {
+        computerScore++;
+    } else if (humanAnswer == "scissors" && computerAnswer == "rock") {
+        computerScore++;
+    } else if (humanAnswer == "scissors" && computerAnswer == "paper") {
+        humanScore++;
+    } else if (humanAnswer == "scissors" && computerAnswer == "scissors") {
+        // It's a tie
     }
 
     runningScore(humanScore, computerScore);
@@ -67,6 +81,8 @@ function addToScore(a, b) {
 buttons.forEach((button) => {
     button.addEventListener("click", function(event) {
         event.preventDefault();
-        addToScore(humanChoice, computerChoice);
+        let saveHumanChoice = humanChoice();
+        let saveComputerChoice = computerChoice();
+        addToScore(saveHumanChoice, saveComputerChoice);
     });
 });
