@@ -3,17 +3,6 @@ const buttons = document.querySelectorAll("button");
 const score = document.querySelector("div");
 const span1 = document.createElement("span");
 
-const humanChoice = function() {
-    let humanInput = prompt("Enter your shape: ");
-    if (humanInput.toLowerCase() === "rock") {
-        return "rock";
-    } else if (humanInput.toLowerCase() === "paper") {
-        return "paper";
-    } else if (humanInput.toLowerCase() === "scissors") {
-        return "scissors";
-    }
-};
-
 const computerChoice = function() {
     let choice = (Math.floor((Math.random() * 3)));
 
@@ -81,8 +70,17 @@ function addToScore(humanAnswer, computerAnswer) {
 buttons.forEach((button) => {
     button.addEventListener("click", function(event) {
         event.preventDefault();
-        let saveHumanChoice = humanChoice();
-        let saveComputerChoice = computerChoice();
-        addToScore(saveHumanChoice, saveComputerChoice);
+        let clickedButton;
+    
+        if (button.id == "one") {
+            clickedButton = "rock";
+        } else if (button.id == "two") {
+            clickedButton = "paper";
+        } else if (button.id == "three") {
+            clickedButton = "scissors";
+        }
+        let getComputerAnswer = computerChoice();
+        console.log(`The computer chose ${getComputerAnswer}`);
+        addToScore(clickedButton, getComputerAnswer);
     });
 });
