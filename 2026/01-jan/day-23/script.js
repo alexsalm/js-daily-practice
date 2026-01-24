@@ -80,6 +80,7 @@ buttons.forEach((button) => {
             clickedButton = "scissors";
         }
         let getComputerAnswer = computerChoice();
+        console.log(`You chose ${clickedButton}`);
         console.log(`The computer chose ${getComputerAnswer}`);
         playRound(clickedButton, getComputerAnswer);
     });
