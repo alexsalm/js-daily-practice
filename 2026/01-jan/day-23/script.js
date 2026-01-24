@@ -18,7 +18,7 @@ const computerChoice = function() {
 let humanScore = 0;
 let computerScore = 0;
 
-function addToScore(humanAnswer, computerAnswer) {
+function playRound(humanAnswer, computerAnswer) {
     const runningScore = function(currentHumanScore, currentComputerScore) {
         span1.textContent = (`Human score: ${currentHumanScore} Computer score: ${currentComputerScore}`);
         score.appendChild(span1);
@@ -81,6 +81,6 @@ buttons.forEach((button) => {
         }
         let getComputerAnswer = computerChoice();
         console.log(`The computer chose ${getComputerAnswer}`);
-        addToScore(clickedButton, getComputerAnswer);
+        playRound(clickedButton, getComputerAnswer);
     });
 });
