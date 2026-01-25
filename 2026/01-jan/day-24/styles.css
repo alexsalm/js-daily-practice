@@ -1,4 +1,8 @@
 .grid-square {
     display: flex;
+    flex-direction: row;
     background-color: skyblue;
+    margin: 10px;
+    width: 65px;
+    height: 55px;
 }
