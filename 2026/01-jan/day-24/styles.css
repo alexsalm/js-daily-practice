@@ -1,6 +1,9 @@
-.grid-square {
+.container {
     display: flex;
     flex-direction: row;
+}
+
+.grid-square {
     background-color: skyblue;
     margin: 10px;
     width: 65px;
