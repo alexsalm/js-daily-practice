@@ -8,6 +8,7 @@ for (let y = 0; y < size; y++) {
         grid += "X";
         const div = document.createElement("div");
         div.classList.add("grid-square");
+        div.textContent = "Hello World!";
         container.appendChild(div);
     }
     grid += "\n";
