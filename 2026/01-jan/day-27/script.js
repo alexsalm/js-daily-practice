@@ -17,6 +17,16 @@ for (let y = 0; y < size; y++) {
         div.classList.add("grid-square");
         div.textContent = "Hello World!";
         container.appendChild(div);
+
+        div.addEventListener('mouseover', (event) => {
+            event.preventDefault();
+            div.style.backgroundColor = "red";
+        });
+
+        div.addEventListener('mouseout', (event) => {
+            event.preventDefault();
+            div.style.backgroundColor = "skyblue";
+        });
     }
     grid += "\n";
 }
