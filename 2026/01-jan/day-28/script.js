@@ -22,11 +22,6 @@ for (let y = 0; y < size; y++) {
             event.preventDefault();
             div.style.backgroundColor = "red";
         });
-
-        div.addEventListener('mouseout', (event) => {
-            event.preventDefault();
-            div.style.backgroundColor = "skyblue";
-        });
     }
     grid += "\n";
 }
