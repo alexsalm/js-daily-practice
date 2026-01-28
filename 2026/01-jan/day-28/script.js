@@ -38,5 +38,6 @@ const button = document.querySelector("button");
 
 button.addEventListener("click", function(event) {
     event.preventDefault();
-    prompt("Enter number of quares per side for a new grid");
+    let squaresPerSide = prompt("Enter number of quares per side for a new grid");
+    createGrid(squaresPerSide);
 });
