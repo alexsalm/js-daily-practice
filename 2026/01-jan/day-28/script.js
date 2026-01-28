@@ -1,7 +1,7 @@
 const container = document.querySelector(".container");
 
-let size = 16;
-let grid = "";
+// let size = 16;
+// let grid = "";
 
 
 // The nested loop is useful for organization/documentation,
@@ -10,23 +10,29 @@ let grid = "";
 
 // However, IMPORTANT: it creates the right number of items
 // creates 256 divs (16 x 16), nested structure achieves that
-for (let y = 0; y < size; y++) {
-    for (let x = 0; x < size; x++) {
-        grid += "X";
-        const div = document.createElement("div");
-        div.classList.add("grid-square");
-        div.textContent = "Hello World!";
-        container.appendChild(div);
+function createGrid(size)   {
+    let grid = "";
+    
+    for (let y = 0; y < size; y++) {
+        for (let x = 0; x < size; x++) {
+            grid += "X";
+            const div = document.createElement("div");
+            div.classList.add("grid-square");
+            div.textContent = "Hello World!";
+            container.appendChild(div);
 
-        div.addEventListener('mouseover', (event) => {
-            event.preventDefault();
-            div.style.backgroundColor = "red";
-        });
+            div.addEventListener('mouseover', (event) => {
+                event.preventDefault();
+                div.style.backgroundColor = "red";
+            });
+        }
+        grid += "\n";
     }
-    grid += "\n";
+
+    console.log(grid);
 }
 
-console.log(grid);
+createGrid(16);
 
 const button = document.querySelector("button");
 
