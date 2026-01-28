@@ -27,3 +27,10 @@ for (let y = 0; y < size; y++) {
 }
 
 console.log(grid);
+
+const button = document.querySelector("button");
+
+button.addEventListener("click", function(event) {
+    event.preventDefault();
+    prompt("Enter number of quares per side for a new grid");
+});
