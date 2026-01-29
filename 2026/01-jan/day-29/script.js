@@ -32,6 +32,10 @@ function createGrid(size)   {
     console.log(grid);
 }
 
+function removeGrid() {
+    container.replaceChildren();
+}
+
 createGrid(16);
 
 const button = document.querySelector("button");
@@ -39,5 +43,6 @@ const button = document.querySelector("button");
 button.addEventListener("click", function(event) {
     event.preventDefault();
     let squaresPerSide = prompt("Enter number of quares per side for a new grid");
+    removeGrid();
     createGrid(squaresPerSide);
 });
