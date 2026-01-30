@@ -1,0 +1,19 @@
+.button-div {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid-square {
+    background-color: skyblue;
+    margin: 1px;
+    width: 10px;
+    height: 10px;
+}
