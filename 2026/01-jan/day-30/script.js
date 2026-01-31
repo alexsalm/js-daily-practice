@@ -1,5 +1,6 @@
 const container = document.querySelector(".container");
 const rowContainer = document.createElement("div");
+rowContainer.classList.add("row-container");
 
 // let size = 16;
 // let grid = "";
@@ -13,11 +14,9 @@ const rowContainer = document.createElement("div");
 // creates 256 divs (16 x 16), nested structure achieves that
 function createGrid(size)   {
     let grid = "";
-    let maxWidth = size;
-    rowContainer.classList.add("row-container");
     
     for (let y = 0; y < size; y++) {
-        for (let x = 0; x < maxWidth; x++) {
+        for (let x = 0; x < size; x++) {
             grid += "X";
             const div = document.createElement("div");
             div.classList.add("grid-square");
