@@ -1,15 +1,5 @@
 const container = document.querySelector(".container");
 
-// let size = 16;
-// let grid = "";
-
-
-// The nested loop is useful for organization/documentation,
-// but it doesn't control the wrap behavior, flex-wrap is dynamic,
-// it will wrap based on container width alone, not loop structure
-
-// However, IMPORTANT: it creates the right number of items
-// creates 256 divs (16 x 16), nested structure achieves that
 function createGrid(size)   {
     let grid = "";
     
@@ -30,7 +20,6 @@ function createGrid(size)   {
         }
         grid += "\n";
         container.appendChild(rowContainer);
-        // go to new line here
     }
 
     console.log(grid);
