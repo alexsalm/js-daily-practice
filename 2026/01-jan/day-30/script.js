@@ -1,6 +1,4 @@
 const container = document.querySelector(".container");
-const rowContainer = document.createElement("div");
-rowContainer.classList.add("row-container");
 
 // let size = 16;
 // let grid = "";
@@ -16,6 +14,9 @@ function createGrid(size)   {
     let grid = "";
     
     for (let y = 0; y < size; y++) {
+        const rowContainer = document.createElement("div");
+        rowContainer.classList.add("row-container");
+        
         for (let x = 0; x < size; x++) {
             grid += "X";
             const div = document.createElement("div");
