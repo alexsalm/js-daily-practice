@@ -46,7 +46,15 @@ const button = document.querySelector("button");
 
 button.addEventListener("click", function(event) {
     event.preventDefault();
+    let limitNumber = 100;
     let squaresPerSide = prompt("Enter number of quares per side for a new grid");
-    removeGrid();
-    createGrid(squaresPerSide);
+    if (squaresPerSide > limitNumber) {
+        console.log("The limit is 100 x 100");
+        removeGrid();
+        createGrid(16);
+    }
+    else {
+        removeGrid();
+        createGrid(squaresPerSide);
+    }
 });
