@@ -1,7 +1,9 @@
-let user = {
-    name: "Alex",       // first property
-    age: 32             // second property
-};
+function makeUser(name, age) {
+    return {
+        name: name,
+        age: age,
+    };
+}
 
+let user = makeUser("Alex", 32);
 alert(user.name);
-alert(user.age);
