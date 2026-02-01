@@ -1,12 +1,23 @@
 let user = {
     name: "Alex",
-    age: 32,
-    isAdmin: true
+    surname: "Lopez"
+};
+user.age = 32;
+
+for (let prop in user) {
+    // keys
+    alert(prop);
+    // values for the keys
+    alert(user[prop]);
+}
+
+let codes = {
+    "+49": "Germany",
+    "+41": "Switzerland",
+    "+44": "Great Britain",
+    "+1": "USA"
 };
 
-for (let key in user) {
-    // keys
-    alert(key);
-    // values for the keys
-    alert(user[key]);
-}
+for (let code in codes) {
+    alert(+code);
+} 
