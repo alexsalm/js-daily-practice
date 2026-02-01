@@ -19,9 +19,13 @@ const city2 = {
 }
 
 const person = {
-    name: {
-        first: "Alex",
-        last: "Lopez",
-    },
-    // ...
+    name: ["Alex", "Lopez"],
+    age: 32,
 };
+
+function logProperty(propertyName) {
+    console.log(person[propertyName]);
+}
+
+logProperty("name");
+logProperty("age");
