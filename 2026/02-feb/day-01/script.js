@@ -17,3 +17,11 @@ const city2 = {
         ` of about ${this.population} million in the city proper.`);
     }   
 }
+
+const person = {
+    name: {
+        first: "Alex",
+        last: "Lopez",
+    },
+    // ...
+};
