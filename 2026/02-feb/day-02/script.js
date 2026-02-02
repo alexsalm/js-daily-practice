@@ -15,3 +15,11 @@ const city = {
 city.population = 14;
 city["name"] = "Tokyo";
 
+const person = {
+    name: "Alex",
+    age: 32,
+};
+
+const myDataName = "height";
+const myDataValue = "1.75m";
+person[myDataName] = myDataValue;
