@@ -4,10 +4,14 @@ const city = {
     isAwesome: true,
 };
 
-function logProperty(propertyName) {
-    console.log(city[propertyName]);
-}
+// function logProperty(propertyName) {
+//     console.log(city[propertyName]);
+// }
 
-logProperty("name");
-logProperty("population");
-logProperty("isAwesome");
+// logProperty("name");
+// logProperty("population");
+// logProperty("isAwesome");
+
+city.population = 14;
+city["name"] = "Tokyo";
+
