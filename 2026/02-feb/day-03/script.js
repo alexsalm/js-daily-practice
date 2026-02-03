@@ -30,3 +30,9 @@ function createPerson(name) {
     };
     return obj;
 }
+
+const salva = createPerson("Salva");
+salva.introduceSelf();
+
+const frankie = createPerson("Frankie");
+frankie.introduceSelf();
