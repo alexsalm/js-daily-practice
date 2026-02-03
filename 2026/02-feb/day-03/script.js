@@ -36,3 +36,17 @@ salva.introduceSelf();
 
 const frankie = createPerson("Frankie");
 frankie.introduceSelf();
+
+// Now the real constructor
+function Person(name, occupation) {
+    this.name = name;
+    this.occupation = occupation;
+    this.introduceSelf = function () {
+        console.log(`Hi! I'm ${this.name}.`);
+        console.log(`I am the ${this.occupation} of my life.`);
+    };
+}
+
+const alex = new Person("Alex", "architect");
+alex.introduceSelf();
+
