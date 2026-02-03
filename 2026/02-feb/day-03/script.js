@@ -19,3 +19,14 @@ const city1 = {
     },
 };
 
+// Constructors 
+
+// This function creates and returns object every time we call it
+function createPerson(name) {
+    const obj = {};
+    obj.name = name;
+    obj.introduceSelf = function () {
+        console.log(`Hi! I'm ${this.name}.`);
+    };
+    return obj;
+}
