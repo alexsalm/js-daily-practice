@@ -34,3 +34,5 @@ function Car(year, make, model) {
 const dailyDriver = new Car(2003, "Toyota", "Camry");
 dailyDriver.introduceCar();
 
+const myNotification = new Notification("Hello");
+
