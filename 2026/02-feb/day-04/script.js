@@ -12,5 +12,25 @@ function Person(name) {
 const alex = new Person("Alex");
 alex.introduceSelf();
 
+function City(name) {
+    this.name = name;
+    this.introduceCity = function () {
+        console.log(`My favorite city is ${this.name}.`);
+    };
+}
 
+const favoriteCity = new City("Amsterdam");
+favoriteCity.introduceCity();
+
+function Car(year, make, model) {
+    this.year = year;
+    this.make = make;
+    this.model = model;
+    this.introduceCar = function () {
+        console.log(`I drive a ${this.year} ${this.make} ${this.model}.`);
+    };
+}
+
+const dailyDriver = new Car(2003, "Toyota", "Camry");
+dailyDriver.introduceCar();
 
