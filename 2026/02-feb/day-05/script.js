@@ -30,3 +30,23 @@ animal = { species: "cat" };
 
 console.log(animal);
 console.log(dog);
+
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+
+let users = [ john, pete, mary ];
+
+function getUserNames(users) {
+    let names = [];
+    for (let user of users) {
+        if (!names.includes(users.name)) {
+            names.push(users.name);
+        }   
+    }
+    return names;
+};
+
+console.log(getUserNames(users));
+
+
