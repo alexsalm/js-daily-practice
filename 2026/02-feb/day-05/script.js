@@ -22,3 +22,11 @@ let primitive = 0;
 
 increaseCounterObject(object);
 increaseCounterPrimitive(primitive);
+
+let animal = { species: "dog "};
+let dog = animal;
+
+animal = { species: "cat" };
+
+console.log(animal);
+console.log(dog);
