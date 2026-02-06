@@ -9,3 +9,5 @@ let names = users.map(item => item.name);
 let ages = users.map(item => item.age);
 // alert(ages);
 
+let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length);
+alert(lengths);
