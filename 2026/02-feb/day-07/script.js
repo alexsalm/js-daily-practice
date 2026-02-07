@@ -4,16 +4,8 @@ let mary = {name: "Mary", age: 28};
 
 let arr = [john, pete, mary];
 
-function sortByAge(array) {
-    let youngestUser = array[0];
-    for (let user of array) {
-        if (user.age < youngestUser.age) {
-            array[user.age] = user;
-        } else if (user.age == youngestUser) {
-            array[user.age] = youngestUser;
-        }
-    }
-    return array;
+function sortByAge(arr) {
+   arr.sort((a,b) => a.age - b.age);
 }
 
 sortByAge(arr);
