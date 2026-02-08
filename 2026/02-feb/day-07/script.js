@@ -28,3 +28,12 @@ function getAverageAge(arr) {
 alert(getAverageAge(arr));
 
 console.log(arr[0]);
+
+// users is an array of objects
+let users = [
+    {id: 'john', name: "John Smith", age: 20},
+    {id: 'ann', name: "Ann Smith", age: 24},
+    {id: 'pete', name: "Pete Peterson", age: 31},
+];
+
+
