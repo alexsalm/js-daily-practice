@@ -50,4 +50,4 @@ function getAverageAge(arr) {
 let newArr = [1, 2, 3, 4, 5];
 
 let result = newArr.reduce((sum, current) => sum + current, 6);
-alert(`The current value of result is ${result}`);
+// alert(`The current value of result is ${result}`);
