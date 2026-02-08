@@ -10,9 +10,9 @@ function sortByAge(arr) {
 
 sortByAge(arr);
 
-alert(arr[0].name);
-alert(arr[1].name);
-alert(arr[2].name);
+// alert(arr[0].name);
+// alert(arr[1].name);
+// alert(arr[2].name);
 
 function getAverageAge(arr) {
     let addedAges = 0;
@@ -25,9 +25,9 @@ function getAverageAge(arr) {
     return averageAge;
 }
 
-alert(getAverageAge(arr));
+// alert(getAverageAge(arr));
 
-console.log(arr[0]);
+// console.log(arr[0]);
 
 // users is an array of objects
 let users = [
