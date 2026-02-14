@@ -15,3 +15,5 @@ function makePositive(numero) {
 
 console.log(makePositive(-2));
 
+console.log(isEven(10));
+
