@@ -8,3 +8,10 @@ function isEven(number) {
 console.log(isEven(75));
 console.log(isEven(60));
 console.log(isEven(-1));
+
+function makePositive(numero) {
+    return -numero;
+}
+
+console.log(makePositive(-2));
+
