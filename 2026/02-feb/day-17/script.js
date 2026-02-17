@@ -5,3 +5,11 @@ function repeat(n, action) {
 }
 
 repeat(5, console.log);
+
+let labels = [];
+// Creating function value on the spot
+repeat(5, i => {
+    labels.push(`Unit ${i + 1}`);
+});
+
+console.log(labels);
