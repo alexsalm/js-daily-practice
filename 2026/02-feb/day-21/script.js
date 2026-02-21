@@ -16,7 +16,7 @@ console.table(range(1, 10));
 
 function sum(arr) {
     let summedArray = arr.reduce((sum, current) => sum + current, 0);
-    console.log(summedArray);
+    return summedArray;
 }
 
-sum(range(1,10));
+console.log(sum(range(1,10)));
