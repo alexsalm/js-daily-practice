@@ -13,7 +13,7 @@ function range(start, end, step = start < end ? 1 : -1) {
 }
 
 function sum(array) {
-    let result = array.reduce((current, sum) => current + sum, 0);
+    let result = array.reduce((sum, current) => sum + current, 0);
     return result;
 }
 
