@@ -1,7 +1,7 @@
 function flatten(array) {
     let flattenedArray = [];
     for (let item of array) {
-        flattenedArray.push(item);
+        flattenedArray = flattenedArray.concat(item);
     }
     return flattenedArray;
 }
