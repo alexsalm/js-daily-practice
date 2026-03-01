@@ -1,8 +1,9 @@
-let a = 3;
-let b = 7;
-
-function multiply(a, b) {
-    return a * b;
+function multiply(...numbers) {
+    let result = 1;
+    for (let number of numbers) {
+        result = result * (number);
+    }
+    return result;
 }
 
-console.log(multiply(1, 2, 3, 4, 5));
+console.log(multiply(3, 2));
