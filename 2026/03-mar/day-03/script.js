@@ -7,6 +7,7 @@ class Rabbit {
   }
 }
 
-let newRabbit = new Rabbit("let's build");
+let newRabbit = new Rabbit("blue");
 
 console.log(newRabbit);
+console.log(newRabbit.speak("let's build"));
