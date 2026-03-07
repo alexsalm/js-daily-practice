@@ -15,3 +15,9 @@ class Rabbit {
 let wiseRabbit = new Rabbit("wise", 99, "Japan");
 console.log(wiseRabbit.speak("stay optimistic"));
 console.log(wiseRabbit.print());
+
+console.log(Object.getPrototypeOf(Rabbit) == Function.prototype);
+console.log(Object.getPrototypeOf(wiseRabbit) == Rabbit.prototype);
+
+console.log(Object.getPrototypeOf(Rabbit));
+console.log(Object.getPrototypeOf(wiseRabbit));
