@@ -7,7 +7,7 @@ class Rabbit {
     speak(line) {
         console.log(`The ${this.type} rabbit says "${line}".`);
     }
-    print(birthPlace) {
+    print() {
         console.log(`The ${this.type} rabbit was born in ${this.countryOfOrigin}.`);
     }
 }
