@@ -32,3 +32,19 @@ console.log(newCustomerPain.getPainPoint());
 let customerPain3 = new PainPoint("decision fatigue");
 console.log(customerPain3.getPainPoint());
 
+class Company {
+    constructor(teamSize) {
+        this.teamSize = teamSize;
+    }
+    getTeamSize() {
+        return `Your team has ${this.teamSize} people.`;
+    }
+}
+
+let company1 = new Company(21);
+console.log(company1.getTeamSize());
+console.log(company1.teamSize);
+
+// Override derived property teamSize
+company1.teamSize = 42;
+console.log(company1.teamSize);
