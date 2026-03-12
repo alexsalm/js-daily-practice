@@ -25,4 +25,10 @@ class PainPoint {
 
 let customerPain = new PainPoint("high churn");
 console.log(customerPain.getPainPoint());
-console.log(customerPain.#this.pain);
+
+let newCustomerPain = new PainPoint("low coordination across teams");
+console.log(newCustomerPain.getPainPoint());
+
+let customerPain3 = new PainPoint("decision fatigue");
+console.log(customerPain3.getPainPoint());
+
