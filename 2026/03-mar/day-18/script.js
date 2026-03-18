@@ -1,4 +1,4 @@
-class kilowattHour {
+class KilowattHour {
     constructor(type, watts) {
         this.type = type;
         this.watts = watts;
