@@ -11,9 +11,9 @@ class KilowattHour {
     }
 }
 
-let appliance1 = new kilowattHour("asic miner", 3500);
+let appliance1 = new KilowattHour("asic miner", 3500);
 console.log(appliance1.intro());
 console.log(appliance1.explain());
 
-let appliance2 = new kilowattHour("household microwave", 1200);
+let appliance2 = new KilowattHour("household microwave", 1200);
 console.log(appliance2.explain());
