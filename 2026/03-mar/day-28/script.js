@@ -4,6 +4,15 @@ class Food {
         this.glycemicIndex = glycemicIndex;
         this.category = category;
     }
+    get foodType() {
+        return this.type;
+    }
+    get bloodGlucoseLevel() {
+        return this.glycemicIndex;
+    }
+    get giCategory() {
+        return this.category;
+    }
     printBloodGlucoseLevel() {
         console.log(`${this.type} has/have a glycemic index of ${this.glycemicIndex}.`);
     }
@@ -32,3 +41,14 @@ const content = document.createElement("div");
 content.classList.add("content");
 content.textContent = "This is the glorious text-content!";
 container.appendChild(content);
+
+const quickOatsContent = document.createElement("div");
+quickOatsContent.classList.add("content");
+quickOatsContent.textContent = `${quickOats.type} has/have a glycemic index of ${quickOats.glycemicIndex}.`;
+
+const hummusContent = document.createElement("div");
+hummusContent.classList.add("content");
+hummusContent.textContent = `${hummus.type} has/have a glycemic index of ${hummus.glycemicIndex}.`;
+
+container.appendChild(quickOatsContent);
+container.appendChild(hummusContent);
