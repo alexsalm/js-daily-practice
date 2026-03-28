@@ -26,3 +26,9 @@ console.log(quickOats.printGICategory());
 let hummus = new Food("Hummus", 55, "green");
 console.log(hummus.printBloodGlucoseLevel());
 console.log(hummus.printGICategory());
+
+const container = document.querySelector("#container");
+const content = document.createElement("div");
+content.classList.add("content");
+content.textContent = "This is the glorious text-content!";
+container.appendChild(content);
