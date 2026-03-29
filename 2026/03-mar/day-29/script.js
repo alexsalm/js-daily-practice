@@ -29,12 +29,12 @@ class Food {
 }
 
 let quickOats = new Food("Quick oats", 70, "yellow");
-console.log(quickOats.printBloodGlucoseLevel());
-console.log(quickOats.printGICategory());
+// console.log(quickOats.printBloodGlucoseLevel());
+// console.log(quickOats.printGICategory());
 
 let hummus = new Food("Hummus", 55, "green");
-console.log(hummus.printBloodGlucoseLevel());
-console.log(hummus.printGICategory());
+// console.log(hummus.printBloodGlucoseLevel());
+// console.log(hummus.printGICategory());
 
 const container = document.querySelector("#container");
 const content = document.createElement("div");
