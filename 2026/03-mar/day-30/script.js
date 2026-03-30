@@ -36,9 +36,11 @@ let hummus = new Food("Hummus", 55, "green");
 // console.log(hummus.printBloodGlucoseLevel());
 // console.log(hummus.printGICategory());
 
+let quinoa = new Food("Quinoa", 55, "green" );
+
 const container = document.querySelector("#container");
 const content = document.createElement("div");
-content.classList.add("content");
+content.classList.add("content-heading"); 
 content.textContent = "This is the glorious text-content!";
 container.appendChild(content);
 
@@ -50,5 +52,10 @@ const hummusContent = document.createElement("div");
 hummusContent.classList.add("content");
 hummusContent.textContent = `${hummus.type} has/have a glycemic index of ${hummus.glycemicIndex}.`;
 
+const quinoaContent = document.createElement("div");
+quinoaContent.classList.add("content");
+quinoaContent.textContent = `${quinoa.type} has/have a glycemic index of ${quinoa.glycemicIndex}`;
+
 container.appendChild(quickOatsContent);
 container.appendChild(hummusContent);
+container.appendChild(quinoaContent);
