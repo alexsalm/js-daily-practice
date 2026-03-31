@@ -38,6 +38,8 @@ let hummus = new Food("Hummus", 55, "green");
 
 let quinoa = new Food("Quinoa", 55, "green" );
 
+let wheatBread = new Food("Whole Grain Whole Wheat Bread", 62.5, "yellow");
+
 const container = document.querySelector("#container");
 const content = document.createElement("div");
 content.classList.add("content-heading"); 
@@ -56,6 +58,11 @@ const quinoaContent = document.createElement("div");
 quinoaContent.classList.add("content");
 quinoaContent.textContent = `${quinoa.type} has/have a glycemic index of ${quinoa.glycemicIndex}`;
 
+const wheatBreadContent = document.createElement("div");
+wheatBreadContent.classList.add("content");
+wheatBreadContent.textContent = `${wheatBread.type} has/have a glycemic index of ${wheatBread.glycemicIndex}`;
+
 container.appendChild(quickOatsContent);
 container.appendChild(hummusContent);
 container.appendChild(quinoaContent);
+container.appendChild(wheatBreadContent);
