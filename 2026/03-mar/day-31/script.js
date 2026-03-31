@@ -28,7 +28,7 @@ class Food {
     }
 }
 
-let quickOats = new Food("Quick oats", 70, "yellow");
+let quickOats = new Food("Quick oats", 62.5, "yellow");
 // console.log(quickOats.printBloodGlucoseLevel());
 // console.log(quickOats.printGICategory());
 
