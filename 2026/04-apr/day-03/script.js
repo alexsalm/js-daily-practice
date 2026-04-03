@@ -10,7 +10,7 @@ const books = [
 ]
 
 const getTheTitles = function(array) {
-    const bookTitles = array.map((item) => item);
+    const bookTitles = array.map((element) => element.title);
     return bookTitles;
 };
 
