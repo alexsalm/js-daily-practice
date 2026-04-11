@@ -15,3 +15,13 @@ initialValue,
 );
 
 console.log(sumWithInitial);
+
+const getAge = function(birth, death) {
+	if (!death) {
+	  death = new Date().getFullYear();
+	}
+
+	return death - birth;
+};
+
+console.log(`I am ${getAge(1993)} years old`);
