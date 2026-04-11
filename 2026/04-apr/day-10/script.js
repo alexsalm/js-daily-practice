@@ -1,7 +1,3 @@
-const findTheOldest = function() {
-
-};
-
 const array = [1, 2, 3, 4];
 
 const initialValue = 0;
