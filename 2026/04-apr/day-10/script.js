@@ -25,3 +25,14 @@ const getAge = function(birth, death) {
 };
 
 console.log(`I am ${getAge(1993, 2140)} years old`);
+
+const findTheOldest = function (people) {
+	return people.reduce((oldest, currentPerson) => {
+		const oldestAge = getAge(oldest.yearOfBirth, oldest.yearOfDeath);
+		const currentAge = getAge(
+			currentPerson.yearOfBirth,
+			currentPerson.yearOfDeath
+		);
+		return oldestAge < currentAge ? currentPerson : oldest;
+	});
+};
