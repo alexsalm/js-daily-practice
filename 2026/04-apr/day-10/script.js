@@ -24,4 +24,4 @@ const getAge = function(birth, death) {
 	return death - birth;
 };
 
-console.log(`I am ${getAge(1993)} years old`);
+console.log(`I am ${getAge(1993, 2140)} years old`);
