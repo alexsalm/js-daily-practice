@@ -1,8 +1,4 @@
-const ledColor = JSON.parse(localStorage.getItem("ledColor")) || [];
 
-function saveToLocalStorage() {
-    localStorage.setItem("ledColor", JSON.stringify(ledColor));
-}
 
 const myLEDColors = [
     "red", 
@@ -11,6 +7,8 @@ const myLEDColors = [
     "green", 
     "purple"
 ];
+
+
 
 const generateColor = document.querySelector(".generateColor");
 
