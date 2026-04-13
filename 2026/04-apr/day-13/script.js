@@ -1,5 +1,3 @@
-
-
 const myLEDColors = [
     "red", 
     "blue", 
@@ -8,8 +6,6 @@ const myLEDColors = [
     "purple"
 ];
 
-
-
 const generateColor = document.querySelector(".generateColor");
 
 generateColor.addEventListener("click", function() {
@@ -17,4 +13,11 @@ generateColor.addEventListener("click", function() {
     const textOnScreen = document.querySelector("#textOnScreen");
     textOnScreen.textContent = randomColor;
     console.log(randomColor);
+
+    let myColor = JSON.stringify(randomColor);
+    console.log(myColor);
+    console.log(JSON.parse(myColor));
 });
+
+
+ 
