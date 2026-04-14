@@ -12,12 +12,9 @@ generateColor.addEventListener("click", function() {
     const randomColor = myLEDColors[(Math.floor(Math.random() * (myLEDColors.length)))];
     const textOnScreen = document.querySelector("#textOnScreen");
     textOnScreen.textContent = randomColor;
-    console.log(randomColor);
+    console.log(`Random color: ${randomColor}`);
 
-    let myColor = JSON.stringify(randomColor);
-    console.log(myColor);
-    console.log(JSON.parse(myColor));
+    let stringifiedColor = JSON.stringify(randomColor);
+    console.log(`The color ${stringifiedColor} is now a JSON encoded string.`);
+    console.log(`The same stringified color has now been parsed: ${JSON.parse(stringifiedColor)}`);
 });
-
-
- 
