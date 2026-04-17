@@ -18,6 +18,8 @@ generateColor.addEventListener("click", function() {
     console.log(`The color ${stringifiedColor} is now a JSON encoded string.`);
     console.log(`The same stringified color has now been parsed: ${JSON.parse(stringifiedColor)}`);
 
-    let myColor = "myColor";
-    localStorage.setItem(myColor, stringifiedColor);
+    let colorArray = [];
+    let nameOfValue = "color-value";
+    colorArray.push(stringifiedColor);
+    localStorage.setItem(nameOfValue, colorArray);
 });
