@@ -23,3 +23,26 @@ generateColor.addEventListener("click", function() {
     colorArray.push(stringifiedColor);
     localStorage.setItem(nameOfValue, colorArray);
 });
+
+const favFruits = [
+    "blueberries",
+    "strawberries",
+    "bananas",
+    "apples",
+    "dates"
+];
+
+const generateFruit = document.querySelector(".generateFruit");
+
+generateFruit.addEventListener("click", function() {
+    const randomFruit = favFruits[(Math.floor(Math.random() * (favFruits.length)))];
+    const fruitText = document.querySelector("#fruitText");
+    fruitText.textContent = randomFruit;
+
+    let stringifiedFruit = JSON.stringify(randomFruit);
+
+    let fruitArray = [];
+    let nameOfFruit = "fruit-value";
+    fruitArray.push(stringifiedFruit);
+    localStorage.setItem(nameOfFruit, fruitArray);
+});
