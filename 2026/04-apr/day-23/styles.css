@@ -1,0 +1,18 @@
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    width: 200px;
+}
+
+.generateColor {
+    display: flex;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+#textOnScreen {
+    color: white;
+}
