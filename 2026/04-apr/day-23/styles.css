@@ -1,18 +1,48 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .button-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: blue;
-    width: 200px;
+    background-color: #525469;
+    width: 300px;
+}
+
+.button2-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #525469;
+    width: 300px;
 }
 
 .generateColor {
     display: flex;
-    margin: 10px;
-    margin-top: 10px;
+    margin: 20px;
+    margin-top: 20px;
+}
+
+.generateFruit {
+    display: flex;
+    margin: 20px;
+    margin-top: 20px;
 }
 
 #textOnScreen {
     color: white;
 }
+
+
+#fruitText {
+    color: white;
+}
+
+
+
+
