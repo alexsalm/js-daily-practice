@@ -1,17 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./script.js" defer></script>
-</head>
-<body>
-    <h1>Countries to visit</h1>
-    <div class="country-container"></div>
-    <label for="userInput">Country name</label>
-    <input type="text" id="userInput">
-    <button class="add-country">Add country</button>
-    <p id="textOnScreen"></p>
-</body>
-</html>
+const addCountryButton = document.querySelector(".add-country");
+
+addCountryButton.addEventListener("click", function() {
+	let textInput = document.getElementById('userInput').value;
+	const textOnScreen = document.querySelector("#textOnScreen");
+	textOnScreen.textContent = textInput;
+
+	let stringifiedCountry = JSON.stringify(textInput);
+	let countryArray = []; // starts off empty
+	let nameOfCountry = "country-value";
+	countryArray.push(stringifiedCountry);
+	localStorage.setItem(nameOfCountry, countryArray);
+});
+
+
+
