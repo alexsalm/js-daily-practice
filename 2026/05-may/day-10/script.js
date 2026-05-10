@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		saveToLocalStorage();
 	});	
 	addTodoItem.addEventListener("click", function() {
-	saveTodoToLocalStorage();
+		saveTodoToLocalStorage();
 	});
 });
 
