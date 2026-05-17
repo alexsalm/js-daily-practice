@@ -35,3 +35,7 @@ function saveTodoToLocalStorage() {
 	todoArray.push(stringifiedTodo);
 	localStorage.setItem(nameOfTodo, todoArray);
 }
+
+let motivation1 = document.createElement("p");
+motivation1.textContent = "Let's pass CSCI 26!";
+motivationSection.appendChild(motivation1);
