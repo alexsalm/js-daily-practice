@@ -1,5 +1,6 @@
 const addCountryButton = document.querySelector(".add-country");
 const addTodoItem = document.querySelector(".add-todo");
+const motivationSection = document.querySelector(".motivation-section");
 let countryArray = []; // starts off empty
 let todoArray = [];
 
