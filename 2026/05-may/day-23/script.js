@@ -13,6 +13,8 @@ const roads = [
 function buildGraph(edges) {
 	let graph = Object.create(null);
 	function addEdge(from, to) {
+	  // the in operator returns true if the specified property is in the 
+	  // specified object or its prototype chain.
 	  if (from in graph) {
 	  	graph[from].push(to);
 	  } else {
