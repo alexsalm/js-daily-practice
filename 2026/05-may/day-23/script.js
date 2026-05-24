@@ -26,4 +26,4 @@ function buildGraph(edges) {
 	return graph;
 }
 
-const roadGraph = buildGraph(roads):
+const roadGraph = buildGraph(roads);
